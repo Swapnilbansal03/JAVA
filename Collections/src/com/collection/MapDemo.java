@@ -19,8 +19,8 @@ public static void main(String[] args) {
     while(itr.hasNext()){  
         //Converting to Map.Entry so that we can get key and value separately  
     	System.out.println(itr.next());
-   /*     Map.Entry entry=(Map.Entry)itr.next();  
-        System.out.println(entry.getKey()+" "+entry.getValue());*/  
+      Map.Entry entry=(Map.Entry)itr.next();  
+        System.out.println(entry.getKey()+" "+entry.getValue());
     }  
 }  
 }  
