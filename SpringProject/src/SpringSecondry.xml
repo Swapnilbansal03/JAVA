@@ -1,0 +1,23 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+                  "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+                  
+        <beans>
+      <bean class="com.spring.pojo.SpringPojoPrimary" id="p" scope="singleton">
+            
+            <property name="Address" value="A-69"></property>
+      </bean>
+      <bean class="com.spring.pojo.SpringPojoSecondry" id="s">
+      		<property name="city" value="Noida"></property>
+      		<property name="primary" ref="p"></property>
+      		<property name="name">
+      		<list>
+      		<value>swap</value>
+      		<value>anshu</value>
+      		<value>ayush</value>
+      		</list>
+      		</property>
+      </bean>
+                  
+       </beans>
+                  
+                  

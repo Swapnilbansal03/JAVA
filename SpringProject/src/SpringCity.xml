@@ -1,0 +1,33 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+                  "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+                  
+        <beans>
+      <bean class="com.spring.pojo.City" id="c">
+      <property name="currentCity" value="Noida"></property>
+      </bean>            
+      
+      <bean class="com.spring.pojo.City" id="c1">
+      <property name="currentCity" value="shivpuri"></property>
+      </bean>            
+      
+      <bean class="com.spring.pojo.StudentCity" id="sc">
+      <property name="sname">
+      <list>
+      <value>swap</value>
+        <value>anshu</value>
+          <value>palsk</value>
+      </list>
+      </property>
+      
+      <property name="city">
+      <list>
+      <ref bean="c"/>
+      <ref bean="c1"/>
+      </list>
+      </property>
+      </bean>
+      	
+                  
+       </beans>
+                  
+                  
