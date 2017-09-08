@@ -8,8 +8,17 @@
    <property name="Url" value="jdbc:oracle:thin:@localhost:1521:xe"></property>
    <property name="Username" value="hr"></property>
    <property name="Password" value="hr"></property>
-
    </bean>  
+   
+   <!-- <bean id="sd" class="dao.StudentDaoImpl">
+  <property name="ds" ref="dm"></property>
+   </bean> -->
+   
+   <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">  
+<property name="dataSource" ref="dm"></property>  
+</bean> 
+
    <bean id="sd" class="dao.StudentDaoImpl">
-  <property name="ds" ref="dm"></property> </bean>
+   <property name="jt" ref="jdbcTemplate"></property>
+   </bean>
    </beans>               

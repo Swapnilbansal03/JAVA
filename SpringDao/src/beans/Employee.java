@@ -1,15 +1,14 @@
 package beans;
 
-public class Student {
+public class Employee {
 	private int id;
-	private String name,address,email;
-	
-	public Student(int id, String name, String address, String email) {
+	private String name;
+	private String address;
+	public Employee(int id, String name, String address) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.address = address;
-		this.email = email;
 	}
 	public int getId() {
 		return id;
@@ -28,12 +27,6 @@ public class Student {
 	}
 	public void setAddress(String address) {
 		this.address = address;
-	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
 	}
 
 }
